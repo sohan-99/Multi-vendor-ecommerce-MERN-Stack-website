@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import { AiFillAccountBook,AiFillGithub, AiFillTwitterCircle, AiOutlineGooglePlus } from 'react-icons/ai'
+import { AiFillAccountBook, AiFillGithub, AiFillTwitterCircle, AiOutlineGooglePlus } from 'react-icons/ai'
 const Login = () => {
-  const [state,setState] = useState({
+  const [state, setState] = useState({
     email: '',
     password: ''
   });
-  const inputHandle= (e)=>{
+  const inputHandle = (e) => {
     setState({
       ...state,
       [e.target.name]: e.target.value
     })
   }
-  const submit= (e)=>{
-e.preventDefault();
-console.log(state);
+  const submit = (e) => {
+    e.preventDefault();
+    console.log(state);
   }
 
   return (
